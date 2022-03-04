@@ -14,12 +14,15 @@ int main(int argc, char *argv[])
     int counter1, counter2;
     cout << temp << endl;
 
+    //тест Push
     for (int i = 0; i < 3; i++){
         st.Push(i);
     }
 
+    //тест Count
     counter1 = st.Count();
 
+    //тест Pop
     temp = st.Pop();
     cout << temp << endl;
 
@@ -27,6 +30,7 @@ int main(int argc, char *argv[])
 
     cout << counter1 << " " << counter2 << endl;
 
+    //обработка исключений
     try{
         st.Pop();
         st.Pop();
