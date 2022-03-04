@@ -1,6 +1,7 @@
 #ifndef STACK_H
 #define STACK_H
 #include <iostream>
+#include "excep.h"
 
 using namespace std;
 
@@ -32,7 +33,7 @@ public:
     T Pop()
     {
         if (top == nullptr){
-            return -1;
+            throw exc::EStackEmpty("Stack empty!");
         }
 
         Node<T> *temp;
