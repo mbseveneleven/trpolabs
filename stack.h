@@ -26,7 +26,25 @@ public:
         p->value = value;
         p->next = top;
         top = p;
-        cout << "Po adresy = " << p << " " << "peredaetsya value = " << value << " staraya golova = " << p->next << endl;
+        //cout << "Po adresy = " << p << " " << "peredaetsya value = " << value << " staraya golova = " << p->next << endl;
+    }
+
+    T Pop()
+    {
+        if (top == nullptr){
+            return -1;
+        }
+
+        Node<T> *temp;
+        T tempvalue;
+        tempvalue = top->value;
+
+        temp = top;
+        top = top->next;
+        //cout << "po adresy = " << temp << " " << "vivoditsya value = " << tempvalue << " novaya golova = " << top << endl;
+
+        delete temp;
+        return tempvalue;
     }
 };
 
