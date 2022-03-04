@@ -46,6 +46,23 @@ public:
         delete temp;
         return tempvalue;
     }
+
+    int Count()
+    {
+        if (top == nullptr){
+            return 0;
+        }
+        else{
+            Node<T> *temp = top;
+            int counter = 0;
+
+            while (temp != nullptr){
+                counter++;
+                temp = temp->next;
+            }
+            return counter;
+        }
+    }
 };
 
 #endif // STACK_H
