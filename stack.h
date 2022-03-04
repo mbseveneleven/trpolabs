@@ -1,6 +1,7 @@
 #ifndef STACK_H
 #define STACK_H
 #include <iostream>
+#include "excep.h"
 
 using namespace std;
 

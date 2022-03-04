@@ -1,6 +1,7 @@
 #include <QCoreApplication>
 #include <iostream>
 #include "stack.h"
+#include "excep.h"
 
 using namespace std;
 
